@@ -26,4 +26,256 @@ body textarea:required:valid {
 body {
 	font-family: "RobotoRegular", sans-serif;
 	font-size: 16px;
+	background-color: #101010;
+}
+ul, li{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+/* Header */
+.header{
+	position: relative;
+	padding-top: 35px;
+	background-color: #fff;
+	max-width: 570px;
+	height: 145px;
+	margin: 0 auto;
+	margin-top: 45px;
+}
+.header .logo a b{
+	font-family: "OpenSansLight";
+	color: #000;
+	font-size: 18px;
+	font-weight: 100;
+	position: absolute;
+	left: 48px;
+	bottom: 0;
+	letter-spacing: 0px;
+}
+.header .logo a{
+	user-select: none;
+	letter-spacing: -3px;
+	width: 170px;
+	margin: 0 auto;
+	display: block;
+	line-height: 30px;
+	font-family: "OpenSansExtraBold";
+	font-size: 48px;
+	color: #000;
+	height: 58px;
+	position: relative;
+}
+.header .main-nav{
+	width: 380px;
+	margin: 0 auto;
+	margin-top: 20px;
+	text-transform: uppercase;
+	font-family: "OpenSansBold";
+	font-size: 13px;
+	display: flex;
+	justify-content: space-between;
+}
+.header .main-nav li a:after{
+	content: '';
+	display: block;
+	position: absolute;
+	width: 0;
+	height: 3px;
+	background-color: #ffa921;
+	bottom: 0;
+}
+.header .main-nav li a:hover{
+	color: #ffa921;
+}
+.header .main-nav li a:hover:after{
+	width: 100%;
+}
+.header .main-nav li a{
+	height: 32px;
+	position: relative;
+	color: #000;
+	display: block;
+}
+.header .social-butts{
+	position: absolute;
+	left: 18px;
+	top: 35px;
+}
+.header .social-butts a{
+	display: block;
+	text-align: center;
+	color: #000;
+	font-size: 14px;
+	margin-bottom: 5px;
+	-webkit-transition: all .1s;
+	-o-transition: all .1s;
+	transition: all .1s;
+}
+.header .social-butts a:hover{
+	color: #00a8ff;
+	transform: scale(1.2)
+}
+
+/* Banner */
+
+.banner-block .banner-order{
+	width: 375px;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 50px;
+}
+.banner-block .banner-order .bann-m-txt{
+	color: #fff;
+	font-size: 36px;
+	font-family: "OpenSansBold";
+}
+.banner-block .banner-order .bann-m-txt b{
+	color: #ffa921;
+}
+.banner-block .banner-order .bann-txt{
+	font-family: "OpenSansLight";
+	color: #fff;
+	font-size: 30px;
+}
+.banner-block .banner-order .bann-txt b{
+	font-weight: 100;
+	color: #00a8ff;
+}
+.banner-block .banner-order .order-now{
+	width: 100%;
+	height: 50px;
+	border: 2px solid #fff;
+	border-radius: 10px;
+	color: #fff;
+	font-family: "OpenSansRegular";
+	font-size: 18px;
+	margin-top: 20px;
+	-webkit-transition: all .1s;
+	-o-transition: all .1s;
+	transition: all .1s;
+	background-color: transparent;
+}
+.banner-block .banner-order .order-now:hover{
+	color: #000;
+	background-color: #fff;
+}
+
+/* Slider */
+
+.slider{
+	width: 100%;
+	height: 450px;
+	margin: 0 auto;
+	margin-top: 110px;
+}
+.slider .slide .sl-info{
+	float: left;
+	padding-top: 10px;
+}
+.slider .slide{
+	padding-right: 85px;
+	padding-left: 85px;
+}
+.slider .slide .sl-title{
+	color: #fff;
+	font-size: 25px;
+	letter-spacing: -1px;
+	font-family: "OpenSansBold";
+	background-color: #00a8ff;
+	padding: 10px 30px 10px 30px;
+	border-radius: 10px;
+}
+.slider .slide .sl-txt{
+	max-width: 410px;
+	font-family: "OpenSansLight";
+	font-size: 23px;
+	color: #bbbbbb;
+	text-align: left;
+	line-height: 38px;
+}
+.slider .slide .sl-img{
+	float: right;
+	width: 470px;
+	height: 345px;
+	overflow: hidden;
+	background-image: url(../img/therightmanagementteam.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	border-radius: 5px;
+}
+.owl-controls{
+	width: 90px;
+	margin: 0 auto;
+	margin-top: 40px;
+}
+.owl-controls .owl-page{
+	width: 15px;
+	height: 15px;
+	background-color: #fff;
+	border-radius: 50%;
+	display: inline-block;
+	margin-right: 10px;
+}
+.owl-controls .owl-page:last-child{
+	margin-right: 0;
+}
+.owl-controls .active{
+	background-color: #ffa921;
+}
+
+/* We get it  */
+
+.wgit-block .wgit{
+	margin-top: 150px;
+	height: 600px;
+}
+.wgit-block .wgit .wg-nav{
+	border: 2px solid #00a8ff;
+	width: 970px;
+	margin: 0 auto;
+	margin-top: 30px;
+	height: 72px;
+	align-items: stretch;
+	flex-direction: row;
+	display: flex;
+}
+.wgit-block .wgit .wg-nav li{
+	line-height: 65px;
+	flex-grow: 1;
+	letter-spacing: -1px;
+	cursor: pointer;
+	text-align: center;
+	color: #00a8ff;
+	font-family: "OpenSansLight";
+	font-size: 35px;
+	-webkit-transition:  all .1s;
+	-o-transition:  all .1s;
+	transition: all .1s;
+}
+.wgit-block .wgit .wg-nav li:hover{
+	background-color: #00a8ff;
+	color: #fff;
+}
+.wgit-block .wgit .wg-nav .active{
+	background-color: #00a8ff;
+	color: #fff;
+}
+.wgit-block .wgit{
+	position: relative;
+}
+.wgit-block .wgit .wgit-title{
+	font-size: 30px;
+	font-family: "OpenSansRegular";
+	color: #fff;
+	margin-left: 83px;
+}
+.wgit-block .wgit .wgit-after-title{
+	position: absolute;
+	top: 12px;
+	color: #7b7b7b;
+	font-size: 16px;
+	font-family: "OpenSansLight";
+	margin-left: 10px;
 }

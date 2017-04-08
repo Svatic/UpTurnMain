@@ -37,23 +37,32 @@ $(document).ready(function() {
 
 	//Каруселька
 	//Документация: http://owlgraphic.com/owlcarousel/
-	var owl = $(".carousel");
+	var owl = $(".slider");
 	owl.owlCarousel({
-		items : 4
-	});
-	owl.on("mousewheel", ".owl-wrapper", function (e) {
-		if (e.deltaY > 0) {
-			owl.trigger("owl.prev");
-		} else {
-			owl.trigger("owl.next");
-		}
-		e.preventDefault();
-	});
-	$(".next_button").click(function(){
-		owl.trigger("owl.next");
-	});
-	$(".prev_button").click(function(){
-		owl.trigger("owl.prev");
+		singleItem : true,
+		items : 1,
+		dots: true,
+		touchDrag: false,
+		mouseDrag: false,
+		transitionStyle : "backSlide",
+		autoPlay : true,
+		responsive : {
+    // breakpoint from 0 up
+    0 : {
+        items: 1
+    },
+    // breakpoint from 480 up
+    480 : {
+        items: 1
+    },
+    // breakpoint from 768 up
+    768 : {
+        items: 1
+    },
+	1170 : {
+		items: 1
+    }
+}
 	});
 
 	//Кнопка "Наверх"
